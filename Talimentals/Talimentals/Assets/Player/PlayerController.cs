@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         ProcessInputs();
+        Animate();
     }
 
     private void FixedUpdate()
@@ -42,4 +43,13 @@ public class PlayerController : MonoBehaviour
         rb.velocity = moveDirection * (moveSpeed + speedAddition);
     }
 
+    void Animate()
+    {
+        if (moveDirection != Vector2.zero)
+        {
+            anim.SetFloat("Horizontal", moveDirection.x);
+            anim.SetFloat("Vertical", moveDirection.y);
+        }
+        anim.SetFloat("Speed", moveSpeed);
+    }
 }
