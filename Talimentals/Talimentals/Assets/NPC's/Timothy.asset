@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Timothy
   dialogue:
-  - 
-  - 
-  - 
+  - Hello, how are you on this fine fall day?
+  - Who starts a conversation like that?
+  - Good day.
   playerDialogue:
-  - 
-  - 
+  - Are you a frog?
+  - Goodbye.
