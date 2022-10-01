@@ -27,44 +27,42 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
     }
 
-    private void OnMouseOver()
+    private void Update()
     {
-        distance = Vector3.Distance(player.transform.position, this.transform.position);
-        Debug.Log(distance);
-        if(inRange == true)
+        if (inRange == true)
         {
             //makes sure curResponseTracker doesn't go out of bounds
-            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            if (Input.GetKeyDown(KeyCode.J))
             {
                 curResponseTracker++;
-                if(curResponseTracker >= npc.playerDialogue.Length -1)
+                if (curResponseTracker >= npc.playerDialogue.Length - 1)
                 {
                     curResponseTracker = npc.playerDialogue.Length - 1;
                 }
             }
-            else if(Input.GetAxis("Mouse ScrollWheel") > 0f)
+            else if (Input.GetKeyDown(KeyCode.U))
             {
                 curResponseTracker--;
-                if(curResponseTracker < 0)
+                if (curResponseTracker < 0)
                 {
                     curResponseTracker = 0;
                 }
             }
 
             //triggers dialogue with the NPC
-            if(Input.GetKeyDown(KeyCode.E) && isTalking == false)
+            if (Input.GetKeyDown(KeyCode.E) && isTalking == false && inRange)
             {
                 StartConversation();
             }
-            else if(Input.GetKeyDown(KeyCode.E) && isTalking == true)
+            else if (Input.GetKeyDown(KeyCode.E)&& isTalking == true)
             {
                 EndDialogue();
             }
 
-            if(curResponseTracker == 0 && npc.playerDialogue.Length >= 0)
+            if (curResponseTracker == 0 && npc.playerDialogue.Length >= 0)
             {
                 playerResponse.text = npc.playerDialogue[0];
-                if(Input.GetKeyDown(KeyCode.Return))
+                if (Input.GetKeyDown(KeyCode.Return))
                 {
                     npcDialogueBox.text = npc.dialogue[1];
                 }
@@ -86,8 +84,12 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
-    }
 
+        if(inRange == false)
+        {
+            EndDialogue();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         inRange = true;
