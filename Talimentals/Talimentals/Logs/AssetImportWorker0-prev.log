@@ -15,11 +15,7 @@ C:/Users/hbcoo/OneDrive/Documents/GitHub/Talimentals-/Talimentals/Talimentals
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60277
-Successfully changed project path to: C:/Users/hbcoo/OneDrive/Documents/GitHub/Talimentals-/Talimentals/Talimentals
-C:/Users/hbcoo/OneDrive/Documents/GitHub/Talimentals-/Talimentals/Talimentals
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 294.85 ms, found 3 plugins.
+
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.28f1 (f3f9dc10f3dd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/Resources/UnitySubsystems
@@ -35,91 +31,30 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005586 seconds.
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 171.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.122 seconds
-Domain Reload Profiling:
-	ReloadAssembly (5123ms)
-		BeginReloadAssembly (176ms)
+
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1079ms)
-			LoadAssemblies (170ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (366ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (535ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (171ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (273ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.216472 seconds.
+
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.067 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2069ms)
-		BeginReloadAssembly (335ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1593ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (554ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (606ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (159ms)
-				ProcessInitializeOnLoadAttributes (400ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3130 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 115.5 MB.
 System memory in use after: 115.7 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3573.
-Total: 3.938200 ms (FindLiveObjects: 0.229300 ms CreateObjectMapping: 0.125500 ms MarkObjects: 3.511100 ms  DeleteObjects: 0.070800 ms)
+
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -133,39 +68,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/DialogueManager.cs
-  artifactKey: Guid(8c3cc2d6538c62e4d9e4dcf2515ac4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/DialogueManager.cs using Guid(8c3cc2d6538c62e4d9e4dcf2515ac4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5bbb0256c59413177efc03eb708a96') in 0.098058 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Scripts/BattleNPC.cs
-  artifactKey: Guid(42d06d7888975a44689a0873425c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BattleNPC.cs using Guid(42d06d7888975a44689a0873425c1f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc642da07c3cbe6d1e20fb238decf2b1') in 0.008095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.494535 seconds.
-  path: Assets/Scenes/Hunters Dev Room.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hunters Dev Room.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59912ffe3447e080639ca40af89e9845') in 0.026375 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.510515 seconds.
-  path: Assets/Slot.prefab
-  artifactKey: Guid(76d0e91a1b01e6946b261f27d77b41c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Slot.prefab using Guid(76d0e91a1b01e6946b261f27d77b41c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109e78c7c2f83972013b317122ebdc95') in 0.168894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.779428 seconds.
-  path: Assets/Talimentals/Gusto.asset
-  artifactKey: Guid(f668c05ee75906d4eb1c3be3f6e044a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Talimentals/Gusto.asset using Guid(f668c05ee75906d4eb1c3be3f6e044a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866ee7fd0f6f68b534a64562f36f2091') in 0.019185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 348.159586 seconds.
-  path: Assets/Talimentals/Lunapillar.asset
-  artifactKey: Guid(f2573341397d4ae43b6c9b69931d7f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Talimentals/Lunapillar.asset using Guid(f2573341397d4ae43b6c9b69931d7f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb38a89ede8503dbcde52f3fa851964') in 0.016021 seconds 
+
 ========================================================================
 Received Import Request.
   Time since last request: 367.532440 seconds.
@@ -181,50 +84,23 @@ Start importing Assets/Talimentals/Talimental.cs using Guid(8e9d06ceebd10c443b99
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.018615 seconds.
+
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.097 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2097ms)
-		BeginReloadAssembly (210ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (1777ms)
-			LoadAssemblies (175ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (697ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (618ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (439ms)
+
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 114.2 MB.
 System memory in use after: 114.4 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3575.
-Total: 4.559300 ms (FindLiveObjects: 0.284100 ms CreateObjectMapping: 0.164200 ms MarkObjects: 4.036000 ms  DeleteObjects: 0.073100 ms)
+
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
