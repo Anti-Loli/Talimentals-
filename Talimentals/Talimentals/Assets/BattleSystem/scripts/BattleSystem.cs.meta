@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a508885c526ea514e833649aa1f52372
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Dante: {fileID: 7300965095377713919, guid: a786f6020affe04499867f7dc3fef9b1, type: 3}
+  - Molom: {fileID: 5778250693947161190, guid: abffe0a91beb8b54caa08502ddce958a, type: 3}
+  - Ignum: {fileID: 5676357688683325089, guid: edc0179d80152c64aa928fb7418842ea, type: 3}
+  - Vegiton: {fileID: 3852648592633102050, guid: 497b4381e88f83f498eda844f04fae38, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
