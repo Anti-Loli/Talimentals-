@@ -37,7 +37,6 @@ Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.28f1/Editor/Data/Mo
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 
-				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -50,22 +49,11 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documen
 Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3129 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3130 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 115.5 MB.
 System memory in use after: 115.7 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3572.
 
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -81,234 +69,18 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Import Request.
 
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.1 MB.
-System memory in use after: 114.4 MB.
-
-
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.2 MB.
-System memory in use after: 114.4 MB.
-
-
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.2 MB.
-System memory in use after: 114.4 MB.
-
-
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 162.607287 seconds.
+  Time since last request: 367.532440 seconds.
   path: Assets/Talimentals/Talimental.cs
   artifactKey: Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Talimentals/Talimental.cs using Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e9728b4a14b36f5f53b5eef6fb25ff') in 0.014864 seconds 
+Start importing Assets/Talimentals/Talimental.cs using Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b153265d1b65a4ae493e01c1f4cf0f9b') in 0.012195 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.969724 seconds.
+  Time since last request: 44.914541 seconds.
   path: Assets/Talimentals/Talimental.cs
   artifactKey: Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Talimentals/Talimental.cs using Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f235f1bed66c27a88f921fa73bf0d2e8') in 0.004807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.062192 seconds.
-  path: Assets/Player/Player Down Walk.png
-  artifactKey: Guid(2c14159e09aca1641aea3a82add26e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player Down Walk.png using Guid(2c14159e09aca1641aea3a82add26e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebe82209d8ad0117c31b99face40832') in 0.212749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Player/Player Walk Left.png
-  artifactKey: Guid(12c164902b726884882a7de7a1c38cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player Walk Left.png using Guid(12c164902b726884882a7de7a1c38cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950e3a783ba147f81282a7b05003f2ce') in 0.042714 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Player/Player walk up.png
-  artifactKey: Guid(203f6d669b8e84149b1c053577ba090e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player walk up.png using Guid(203f6d669b8e84149b1c053577ba090e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b23ec376c98071eba6aa0532e7d7a8e') in 0.059608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Player/Player.prefab
-  artifactKey: Guid(3b02358a2fc6fd343b82f93c825840f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player.prefab using Guid(3b02358a2fc6fd343b82f93c825840f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c998abe91efefb4aa9524c6b0b40a6b') in 0.030244 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Player/Player Walk Right.png
-  artifactKey: Guid(8440349bea1120541bbb38efb2cb57b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player/Player Walk Right.png using Guid(8440349bea1120541bbb38efb2cb57b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e9f26a40af45125ab701b98b16df67') in 0.050315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.547378 seconds.
-  path: Assets/Sprite Art/auld.png
-  artifactKey: Guid(de9c9cb2696354b41b9f8d3137312b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/auld.png using Guid(de9c9cb2696354b41b9f8d3137312b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9db9e5a1eaec08d7fab0ab1bee299f3') in 0.031501 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000528 seconds.
-  path: Assets/Sprite Art/cobblefloor.png
-  artifactKey: Guid(e82d18b83658b4647bf19e3441b80256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cobblefloor.png using Guid(e82d18b83658b4647bf19e3441b80256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8c082d844d7487214abb9ce121256c') in 0.040558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Sprite Art/NPC placeholder.jpg
-  artifactKey: Guid(81f62ae534917e84892be3dc8c62a474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/NPC placeholder.jpg using Guid(81f62ae534917e84892be3dc8c62a474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2082f66fb502f16fb5ca230740177855') in 0.052923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Sprite Art/npc2.png
-  artifactKey: Guid(ab7146d6d512092498f0f3222641af36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/npc2.png using Guid(ab7146d6d512092498f0f3222641af36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0e4c490d2e2e21c25c06d52143f64b') in 0.034528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Sprite Art/cante walk.png
-  artifactKey: Guid(a3c7941f640391c49bda519b4cdbae21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante walk.png using Guid(a3c7941f640391c49bda519b4cdbae21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0143ee263be5137ef53846861746dd2') in 0.032573 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/Sprite Art/cante sprites walk.png
-  artifactKey: Guid(c3001f33026ba1147be82ba7a5384a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante sprites walk.png using Guid(c3001f33026ba1147be82ba7a5384a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998aec31c6ffd22bb26305bb2d0a6cfc') in 0.039044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Sprite Art/cante sprites small walk.png
-  artifactKey: Guid(3152adfa92a4c91429f64fbd364711ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante sprites small walk.png using Guid(3152adfa92a4c91429f64fbd364711ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469073f56dc3a870d27827b825e4d0d0') in 0.035733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Sprite Art/cante.png
-  artifactKey: Guid(a77c906d02d0fb04c9103378271dee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante.png using Guid(a77c906d02d0fb04c9103378271dee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00376862984ef3af63daacf4e2f9d7bd') in 0.034299 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000310 seconds.
-  path: Assets/Sprite Art/npc5.png
-  artifactKey: Guid(d76f68448da7e0f43a4867ded9e889c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/npc5.png using Guid(d76f68448da7e0f43a4867ded9e889c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbed243777e6e7038438ca22d364e4b0') in 0.040562 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/Sprite Art/npc3.png
-  artifactKey: Guid(fc6f2af0f415db84d91455ea092e1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/npc3.png using Guid(fc6f2af0f415db84d91455ea092e1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500ec8ed3a94238608953e7c08248201') in 0.032775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/Sprite Art/cante sprites small.png
-  artifactKey: Guid(905e3b9ba2a12a649b12882d34e7f6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante sprites small.png using Guid(905e3b9ba2a12a649b12882d34e7f6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b36b20307f1178a35b77ed9beb7974') in 0.038641 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/Sprite Art/cante sprites.png
-  artifactKey: Guid(5d2c64bfc755f5647b95516e277bb899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/cante sprites.png using Guid(5d2c64bfc755f5647b95516e277bb899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb10797ce635ec9c3510cf4eeee02808') in 0.041588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Sprite Art/npc4.png
-  artifactKey: Guid(95aa1db4a8bca1546ba3445256aabb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite Art/npc4.png using Guid(95aa1db4a8bca1546ba3445256aabb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b4457452b7ca95cd4108d0711c4c14') in 0.037901 seconds 
+Start importing Assets/Talimentals/Talimental.cs using Guid(8e9d06ceebd10c443b99cc835e6327a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ade59afdd449f393f257aa8e2a1859') in 0.005194 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -319,14 +91,15 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\hbcoo\OneDrive\Documen
 Native extension for WindowsStandalone target not found
 
 				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3128 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.1 MB.
-System memory in use after: 128.4 MB.
+Unloading 3111 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.2 MB.
+System memory in use after: 114.4 MB.
+
 
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -339,16 +112,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 656.455913 seconds.
-  path: Assets/Talimentals/Gusto.asset
-  artifactKey: Guid(f668c05ee75906d4eb1c3be3f6e044a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Talimentals/Gusto.asset using Guid(f668c05ee75906d4eb1c3be3f6e044a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '866ee7fd0f6f68b534a64562f36f2091') in 0.039119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.568477 seconds.
-  path: Assets/Scenes/Hunters Dev Room.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Hunters Dev Room.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafdd5dd3d5e6c04045927c6b727cc7d') in 0.016989 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -46,13 +46,11 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\axm69\Documents\GitHub
 Symbol file LoadedFromMemory doesn't match image C:\Users\axm69\Documents\GitHub\Talimentals-\Talimentals\Talimentals\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 
-				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -67,7 +65,6 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Import Request.
 
-
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -78,4 +75,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16.243895 seconds.
+  path: Assets/Sprite Art/npc6.png
+  artifactKey: Guid(c982e848da1386249957d1c68b94275d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite Art/npc6.png using Guid(c982e848da1386249957d1c68b94275d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d100d41d5a19b5efbf432edb33dad5c') in 0.100210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.724755 seconds.
+  path: Assets/Sprite Art/npc2.png
+  artifactKey: Guid(ab7146d6d512092498f0f3222641af36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite Art/npc2.png using Guid(ab7146d6d512092498f0f3222641af36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '478b462491de94392d5ba6ccae6b5def') in 0.025502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.266616 seconds.
+  path: Assets/Sprite Art/npc3.png
+  artifactKey: Guid(fc6f2af0f415db84d91455ea092e1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite Art/npc3.png using Guid(fc6f2af0f415db84d91455ea092e1d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d8d0f1ed1aac6018dae02ca9283da4') in 0.022817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.720474 seconds.
+  path: Assets/Sprite Art/npc4.png
+  artifactKey: Guid(95aa1db4a8bca1546ba3445256aabb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite Art/npc4.png using Guid(95aa1db4a8bca1546ba3445256aabb2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86c25082ad71907652f56b66dc4bb3d') in 0.032034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.385876 seconds.
+  path: Assets/Sprite Art/auld.png
+  artifactKey: Guid(de9c9cb2696354b41b9f8d3137312b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite Art/auld.png using Guid(de9c9cb2696354b41b9f8d3137312b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876831954d203ce115086b71ebee0ea2') in 0.020871 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
