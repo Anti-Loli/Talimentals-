@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e9d06ceebd10c443b99cc835e6327a2, type: 3}
-  m_Name: Gusto
+  m_Name: Lunapillar
   m_EditorClassIdentifier: 
-  name: Gusto
-  health: 5
-  attack: 7
-  defence: 4
-  speed: 6
-  element: Air
+  name: Lunapillar
+  health: 15
+  attack: 3
+  defence: 9
+  speed: 4
+  element: Dark
   moves:
-  - Charge
-  - Air Strike
+  - Slash
+  - Dark strike
   moveElements:
   - Neutral
-  - Air
+  - Dark

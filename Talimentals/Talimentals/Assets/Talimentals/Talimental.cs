@@ -13,5 +13,7 @@ public class Talimental : ScriptableObject
     public string element;
     [TextArea(3, 15)]
     public string[] moves;
-    
+    [TextArea(3, 15)]
+    public string[] moveElements;
+
 }
