@@ -1,0 +1,37 @@
+0000000000000000000000000000000000000000 c9e6cbbd6dd917e14b825b2495bf7b0a0622e18a Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663252882 -0400	clone: from https://github.com/Anti-Loli/Talimentals-.git
+c9e6cbbd6dd917e14b825b2495bf7b0a0622e18a 79812cf662398b3f9c5f4ec93e2f983c311d2fa3 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663558898 -0400	pull --ff --progress origin: Fast-forward
+79812cf662398b3f9c5f4ec93e2f983c311d2fa3 c9e6cbbd6dd917e14b825b2495bf7b0a0622e18a Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663558906 -0400	checkout: moving from main to Hunter
+c9e6cbbd6dd917e14b825b2495bf7b0a0622e18a 269b1aa8f52fc9c2559c6ec74cb33f8582daaa2d Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663558988 -0400	pull --ff --progress origin: Fast-forward
+269b1aa8f52fc9c2559c6ec74cb33f8582daaa2d e1ae15f2c854406d8969277a6e09a307cd52369f Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663697187 -0400	pull --ff --progress origin: Fast-forward
+e1ae15f2c854406d8969277a6e09a307cd52369f 371a9a38a3fe16d50cefe2f761bb8b17907d6a65 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663697247 -0400	commit: NPC Object, Text box beta, and gitignore
+371a9a38a3fe16d50cefe2f761bb8b17907d6a65 d2e402ece59290e5b6aba393da1406bcec22a135 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663699559 -0400	commit: Player Movement without animations
+d2e402ece59290e5b6aba393da1406bcec22a135 27bcb7c3874eedda170ac71baef34984879ab1bf Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663699666 -0400	commit: Update .suo
+27bcb7c3874eedda170ac71baef34984879ab1bf 5e9c5c2ee2c6d236b92e4ab12f535507044029bc Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663854009 -0400	pull --ff --progress origin: Fast-forward
+5e9c5c2ee2c6d236b92e4ab12f535507044029bc d4b9b0f1867daf634263d9157ded8857d04ed147 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663854683 -0400	commit: Moved NPC art into project
+d4b9b0f1867daf634263d9157ded8857d04ed147 a590a5de62c3aad255f14a88132377a7df527561 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1663872225 -0400	commit: Added Sprite folder and player spritesheets
+a590a5de62c3aad255f14a88132377a7df527561 667f6a4389d630418637457abd0b917887da1f53 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664049906 -0400	pull --ff --progress origin: Fast-forward
+667f6a4389d630418637457abd0b917887da1f53 c80bbdd3c1e0353c572ef2cfabe687fdbc73a9c3 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664055556 -0400	commit: Player Prefab
+c80bbdd3c1e0353c572ef2cfabe687fdbc73a9c3 4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262107 -0400	checkout: moving from Hunter to main
+4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 c80bbdd3c1e0353c572ef2cfabe687fdbc73a9c3 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262221 -0400	checkout: moving from main to Hunter
+c80bbdd3c1e0353c572ef2cfabe687fdbc73a9c3 ea79095e740a4cde12c592a18abe76eecd545b2f Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262252 -0400	commit: Ignore
+ea79095e740a4cde12c592a18abe76eecd545b2f 5ded5446248f80f983a1fe6ad3410332e32165b4 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262289 -0400	pull --ff --progress origin: Merge made by the 'ort' strategy.
+5ded5446248f80f983a1fe6ad3410332e32165b4 4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262294 -0400	checkout: moving from Hunter to main
+4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262514 -0400	reset: moving to HEAD
+4177aa1297bd0f86460d3b07a77a8d3c37d55fa0 5ded5446248f80f983a1fe6ad3410332e32165b4 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664262514 -0400	checkout: moving from main to Hunter
+5ded5446248f80f983a1fe6ad3410332e32165b4 41e7c56c97e8e25a92181b399f1ededbcd86d651 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664264197 -0400	commit: Added Dialogue manager code
+41e7c56c97e8e25a92181b399f1ededbcd86d651 5ded5446248f80f983a1fe6ad3410332e32165b4 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664264302 -0400	reset: moving to 5ded5446248f80f983a1fe6ad3410332e32165b4
+5ded5446248f80f983a1fe6ad3410332e32165b4 5e089239266e4e1f99bba6f86ada1e2456ad7966 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664264747 -0400	commit: Added Dialogue manager code
+5e089239266e4e1f99bba6f86ada1e2456ad7966 8bff8fd1cf31681fb10a69abbbf52418120c2144 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664667542 -0400	commit: Updated Dialogue Manager
+8bff8fd1cf31681fb10a69abbbf52418120c2144 25a9f8b88215c6551bb57a5874d3945afe877c14 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664890588 -0400	pull --ff --progress origin: Fast-forward
+25a9f8b88215c6551bb57a5874d3945afe877c14 72ffa79c7da73bb6da139dea0a1e076f32a3a635 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664892164 -0400	commit: Created BattleNPC
+72ffa79c7da73bb6da139dea0a1e076f32a3a635 638681350f99ae15bb56ba79158729ed18a6f3c3 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1664894495 -0400	commit: Created talimental scriptable object
+638681350f99ae15bb56ba79158729ed18a6f3c3 7d53f66c90a87f9a49a9637fe8b66a3bc8ae9401 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665064925 -0400	commit: Created talimental script objects
+7d53f66c90a87f9a49a9637fe8b66a3bc8ae9401 b3e9b2694ec8cfb69ea81680fbe5e19a26ae9fe0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665065715 -0400	commit: Modified scriptable objects
+b3e9b2694ec8cfb69ea81680fbe5e19a26ae9fe0 2528c91e939976899653474332ca9d0d3562f172 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665065829 -0400	pull --ff --progress origin: Merge made by the 'ort' strategy.
+2528c91e939976899653474332ca9d0d3562f172 12459eba0ad56691605dfc19154db1d8b05a4cd8 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665066411 -0400	pull --ff --progress origin: Fast-forward
+12459eba0ad56691605dfc19154db1d8b05a4cd8 9833e312e624c5cc32ee7dddfa749189b37acad6 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665175274 -0400	commit: Moved gitignore and edited battle system
+9833e312e624c5cc32ee7dddfa749189b37acad6 faf79ae2e0168d2a5379b01ccc88e53722e4c3d0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665175334 -0400	pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+faf79ae2e0168d2a5379b01ccc88e53722e4c3d0 7b74e5a639de31967805576007910081c37f4dc6 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665495794 -0400	commit: Changed File locations
+7b74e5a639de31967805576007910081c37f4dc6 faf79ae2e0168d2a5379b01ccc88e53722e4c3d0 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665495994 -0400	reset: moving to faf79ae2e0168d2a5379b01ccc88e53722e4c3d0
+faf79ae2e0168d2a5379b01ccc88e53722e4c3d0 e13eaa62c7230d14c0fc27757b30375ae814a6c4 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665496013 -0400	commit: Changed File locations
+e13eaa62c7230d14c0fc27757b30375ae814a6c4 ba7f86c58e11408b0f49aa67f68eb93e86e629e2 Hunter Hockman <84150506+Anti-Loli@users.noreply.github.com> 1665496136 -0400	pull --ff --recurse-submodules --progress origin: Fast-forward
