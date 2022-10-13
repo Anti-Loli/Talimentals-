@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class BattlePlayer : MonoBehaviour
 {
-    public Talimental playerTalimental;
+    public Talimental Talimental;
 
-    private string name;
-    private int level;
-    private int maxHP;
-    private int attack;
-    private int defence;
-    private int speed;
-    private string element;
-    private string[] moves;
-    private string[] moveElements;
+    protected string name;
+    protected int level;
+    protected int maxHP;
+    protected int attack;
+    protected int defence;
+    protected int speed;
+    protected string element;
+    protected string[] moves;
+    protected string[] moveElements;
 
     
     private int currentHP;
@@ -22,18 +22,35 @@ public class BattlePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        name = playerTalimental.name;
-        level = playerTalimental.level;
-        maxHP = playerTalimental.health;
-        attack = playerTalimental.attack;
-        defence = playerTalimental.defence;
-        speed = playerTalimental.speed;
-        element = playerTalimental.element;
+        name = Talimental.name;
+        level = Talimental.level;
+        maxHP = Talimental.health;
+        attack = Talimental.attack;
+        defence = Talimental.defence;
+        speed = Talimental.speed;
+        element = Talimental.element;
         assignArrays();
     }
 
    void assignArrays ()
     {
 
+    }
+
+    public bool TakeDamage(int dmg)
+    {
+        currentHP -= dmg;
+
+        if (currentHP <= 0)
+            return true;
+        else
+            return false;
+    }
+
+    public void Heal(int amount)
+    {
+        currentHP += amount;
+        if (currentHP > maxHP)
+            currentHP = maxHP;
     }
 }

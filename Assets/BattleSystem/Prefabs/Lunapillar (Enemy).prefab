@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3072761144372823482}
   - component: {fileID: 3072761144372823481}
+  - component: {fileID: -8741619437924182644}
   m_Layer: 0
-  m_Name: 'Enemy '
+  m_Name: Lunapillar (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,3 +84,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8741619437924182644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3072761144372823480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e0f5102dfc0d34895f120d03e7ea7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: Lunapillar
+  unitLevel: 2
+  maxHP: 15
+  currentHP: 15
+  attack: 3
+  defence: 9
+  speed: 4
+  element: Dark
+  moves:
+  - 'Slash '
+  - Dark Nibble
+  moveElements:
+  - null
+  - Dark
+  damage: 0
