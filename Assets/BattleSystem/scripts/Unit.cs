@@ -21,8 +21,10 @@ public class Unit : MonoBehaviour
 
 	//calc damage
 
-	public bool TakeDamage(int dmg)
+	public bool TakeDamage(Unit enemy)
 	{
+		int dmg = (((((2 * enemy.unitLevel) /5) + 2 * enemy.attack /defence)/ 50) + 2);
+
 		currentHP -= dmg;
 
 		if (currentHP <= 0)
