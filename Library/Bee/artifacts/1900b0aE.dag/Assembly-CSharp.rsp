@@ -325,7 +325,6 @@
 "Assets/BattleSystem/scripts/Unit.cs"
 "Assets/InventoryUI.cs"
 "Assets/NPC's/NPC.cs"
-"Assets/Player/BattlePlayer.cs"
 "Assets/Player/PlayerController.cs"
 "Assets/Scripts/BattleNPC.cs"
 "Assets/Scripts/DialogueManager.cs"

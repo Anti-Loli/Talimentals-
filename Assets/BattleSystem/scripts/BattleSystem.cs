@@ -52,6 +52,7 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerAttack()
 	{
+		
 		bool isDead = enemyUnit.TakeDamage(playerUnit);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
