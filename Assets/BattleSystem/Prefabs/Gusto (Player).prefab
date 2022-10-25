@@ -108,6 +108,6 @@ MonoBehaviour:
   - Charge
   - Torando Punch
   moveElements:
-  - null
+  - Light
   - Air
   damage: 5

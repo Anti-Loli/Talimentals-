@@ -25,6 +25,8 @@ public class Unit : MonoBehaviour
 	{
 		int dmg = (((((2 * enemy.unitLevel) /5) + 2 * enemy.attack /defence)/ 50) + 2);
 
+
+
 		currentHP -= dmg;
 
 		if (currentHP <= 0)
