@@ -26,9 +26,21 @@ public class BattleSystem : MonoBehaviour
 	public BattleState state;
 
 	public GameObject attackMenu;
+	public Button attackOne;
+	public Button attackTwo;
+	private bool attackOneClicked;
+	private bool attackTwoClicked;
 
 	// Start is called before the first frame update
-	void Start()
+
+	private void Awake()
+    {
+		attackOne.onClick.AddListener(AttackOneClicked);
+
+		attackTwo.onClick.AddListener(AttackTwoClicked);
+	}
+
+    void Start()
 	{
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
@@ -167,4 +179,15 @@ public class BattleSystem : MonoBehaviour
 		StartCoroutine(PlayerHeal());
 	}
 
+	private void AttackOneClicked()
+    {
+		playerUnit.currentMove = attackOne.GetComponentInChildren<Text>().text;
+		Debug.Log(playerUnit.currentMove);
+	}
+
+	private void AttackTwoClicked()
+    {
+		playerUnit.currentMove = attackTwo.GetComponentInChildren<Text>().text;
+		Debug.Log(playerUnit.currentMove);
+	}
 }
