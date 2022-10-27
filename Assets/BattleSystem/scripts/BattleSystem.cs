@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
@@ -24,8 +25,22 @@ public class BattleSystem : MonoBehaviour
 
 	public BattleState state;
 
+	public GameObject attackMenu;
+	public Button attackOne;
+	public Button attackTwo;
+	private bool attackOneClicked;
+	private bool attackTwoClicked;
+
 	// Start is called before the first frame update
-	void Start()
+
+	private void Awake()
+    {
+		attackOne.onClick.AddListener(AttackOneClicked);
+
+		attackTwo.onClick.AddListener(AttackTwoClicked);
+	}
+
+    void Start()
 	{
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
@@ -65,6 +80,10 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.WON;
 			EndBattle();
 		}
+		else if(playerUnit.speed < enemyUnit.speed)
+        {
+			PlayerTurn();
+		}
 		else
 		{
 			state = BattleState.ENEMYTURN;
@@ -89,6 +108,10 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.LOST;
 			EndBattle();
 		}
+		else if(playerUnit.speed < enemyUnit.speed)
+        {
+			StartCoroutine(PlayerAttack());
+		}
 		else
 		{
 			state = BattleState.PLAYERTURN;
@@ -102,16 +125,19 @@ public class BattleSystem : MonoBehaviour
 		if (state == BattleState.WON)
 		{
 			dialogueText.text = "You won the battle!";
+			SceneManager.LoadScene("Hunters Dev Room");
 		}
 		else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "You were defeated.";
+			SceneManager.LoadScene("Hunters Dev Room");
 		}
 	}
 
 	void PlayerTurn()
 	{
 		dialogueText.text = "Choose an action:";
+		attackMenu.SetActive(true);
 	}
 
 	IEnumerator PlayerHeal()
@@ -132,15 +158,36 @@ public class BattleSystem : MonoBehaviour
 		if (state != BattleState.PLAYERTURN)
 			return;
 
-		StartCoroutine(PlayerAttack());
+		attackMenu.SetActive(false);
+
+		//compares the speeds of the player and enemy and decides which one goes first 
+		if (playerUnit.speed > enemyUnit.speed)
+        {
+			StartCoroutine(PlayerAttack());
+		}
+		else if(playerUnit.speed < enemyUnit.speed)
+        {
+			StartCoroutine(EnemyTurn());
+		}
 	}
 
 	public void OnHealButton()
 	{
 		if (state != BattleState.PLAYERTURN)
 			return;
-
+		attackMenu.SetActive(false);
 		StartCoroutine(PlayerHeal());
 	}
 
+	private void AttackOneClicked()
+    {
+		playerUnit.currentMove = attackOne.GetComponentInChildren<Text>().text;
+		Debug.Log(playerUnit.currentMove);
+	}
+
+	private void AttackTwoClicked()
+    {
+		playerUnit.currentMove = attackTwo.GetComponentInChildren<Text>().text;
+		Debug.Log(playerUnit.currentMove);
+	}
 }
