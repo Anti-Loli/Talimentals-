@@ -8,6 +8,7 @@ public class BattleHUD1 : MonoBehaviour
 
 	public Text nameText;
 	public Text levelText;
+	public Text elementText;
 	public Slider hpSlider;
 
 	public Text attackOne;
@@ -17,6 +18,7 @@ public class BattleHUD1 : MonoBehaviour
 	{
 		nameText.text = unit.unitName;
 		levelText.text = "Lvl " + unit.unitLevel;
+		elementText.text = unit.element;
 		hpSlider.maxValue = unit.maxHP;
 		hpSlider.value = unit.currentHP;
 		attackOne.text = unit.moves[0];
