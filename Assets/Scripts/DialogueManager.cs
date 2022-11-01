@@ -59,6 +59,18 @@ public class DialogueManager : MonoBehaviour
                 EndDialogue();
             }
 
+            for(int i = 0; i < npc.dialogue.Length; i++)
+            {
+                if (curResponseTracker == i && npc.playerDialogue.Length >= i)
+                {
+                    playerResponse.text = npc.playerDialogue[i];
+                    if (Input.GetKeyDown(KeyCode.Return))
+                    {
+                        npcDialogueBox.text = npc.dialogue[i + 1];
+                    }
+                }
+            }
+            /*
             if (curResponseTracker == 0 && npc.playerDialogue.Length >= 0)
             {
                 playerResponse.text = npc.playerDialogue[0];
@@ -83,6 +95,7 @@ public class DialogueManager : MonoBehaviour
                     npcDialogueBox.text = npc.dialogue[3];
                 }
             }
+            */
         }
 
         if(inRange == false)
