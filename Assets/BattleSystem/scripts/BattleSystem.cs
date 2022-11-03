@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -28,15 +27,18 @@ public class BattleSystem : MonoBehaviour
 	public GameObject attackMenu;
 	public Button attackOne;
 	public Button attackTwo;
-	private bool attackOneClicked;
-	private bool attackTwoClicked;
 
-	// Start is called before the first frame update
+	//sprites used to represent attacks
+	public GameObject tornadoPunch;
+	public GameObject charge;
+	public GameObject lunapillarAttack;
+
+	private bool continueBattle = false;
 
 	private void Awake()
     {
+		//listeners for when the players attack buttons are clicked
 		attackOne.onClick.AddListener(AttackOneClicked);
-
 		attackTwo.onClick.AddListener(AttackTwoClicked);
 	}
 
@@ -80,12 +82,16 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.WON;
 			EndBattle();
 		}
-		else if(playerUnit.speed < enemyUnit.speed)
-        {
+		else if (playerUnit.speed < enemyUnit.speed)
+		{
+			charge.SetActive(false);
+			tornadoPunch.SetActive(false);
 			PlayerTurn();
 		}
 		else
 		{
+			charge.SetActive(false);
+			tornadoPunch.SetActive(false);
 			state = BattleState.ENEMYTURN;
 			StartCoroutine(EnemyTurn());
 		}
@@ -94,11 +100,11 @@ public class BattleSystem : MonoBehaviour
 	IEnumerator EnemyTurn()
 	{
 		dialogueText.text = enemyUnit.unitName + " attacks!";
+		lunapillarAttack.SetActive(true);
 
 		yield return new WaitForSeconds(1f);
 
 		bool isDead = playerUnit.TakeDamage(enemyUnit);
-
 		playerHUD.SetHP(playerUnit.currentHP);
 
 		yield return new WaitForSeconds(1f);
@@ -110,14 +116,15 @@ public class BattleSystem : MonoBehaviour
 		}
 		else if(playerUnit.speed < enemyUnit.speed)
         {
+			lunapillarAttack.SetActive(false);
 			StartCoroutine(PlayerAttack());
 		}
 		else
 		{
+			lunapillarAttack.SetActive(false);
 			state = BattleState.PLAYERTURN;
 			PlayerTurn();
 		}
-
 	}
 
 	void EndBattle()
@@ -151,6 +158,7 @@ public class BattleSystem : MonoBehaviour
 
 		state = BattleState.ENEMYTURN;
 		StartCoroutine(EnemyTurn());
+		
 	}
 
 	public void OnAttackButton()
@@ -179,15 +187,22 @@ public class BattleSystem : MonoBehaviour
 		StartCoroutine(PlayerHeal());
 	}
 
+	public void OnContinueButton()
+    {
+		continueBattle = true;
+    }
+
 	private void AttackOneClicked()
     {
 		playerUnit.currentMove = attackOne.GetComponentInChildren<Text>().text;
+		charge.SetActive(true);
 		Debug.Log(playerUnit.currentMove);
 	}
 
 	private void AttackTwoClicked()
     {
 		playerUnit.currentMove = attackTwo.GetComponentInChildren<Text>().text;
+		tornadoPunch.SetActive(true);
 		Debug.Log(playerUnit.currentMove);
 	}
 }

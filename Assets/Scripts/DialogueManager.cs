@@ -10,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     bool isTalking = false;
     bool inRange = false;
 
-    float distance;
     float curResponseTracker = 0;
 
     public GameObject player;
@@ -70,32 +69,6 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
             }
-            /*
-            if (curResponseTracker == 0 && npc.playerDialogue.Length >= 0)
-            {
-                playerResponse.text = npc.playerDialogue[0];
-                if (Input.GetKeyDown(KeyCode.Return))
-                {
-                    npcDialogueBox.text = npc.dialogue[1];
-                }
-            }
-            else if (curResponseTracker == 1 && npc.playerDialogue.Length >= 1)
-            {
-                playerResponse.text = npc.playerDialogue[1];
-                if (Input.GetKeyDown(KeyCode.Return))
-                {
-                    npcDialogueBox.text = npc.dialogue[2];
-                }
-            }
-            else if (curResponseTracker == 2 && npc.playerDialogue.Length >= 2)
-            {
-                playerResponse.text = npc.playerDialogue[2];
-                if (Input.GetKeyDown(KeyCode.Return))
-                {
-                    npcDialogueBox.text = npc.dialogue[3];
-                }
-            }
-            */
         }
 
         if(inRange == false)
