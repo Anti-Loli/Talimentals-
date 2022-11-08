@@ -54,10 +54,39 @@ public class BattleSystem : MonoBehaviour
     {
 		if (Input.GetKeyDown(KeyCode.E))
 		{
-			if(state == BattleState.START)
+			if(state == BattleState.PLAYERTURN)
             {
-
+				if(playerUnit.speed < enemyUnit.speed)
+                {
+					PlayerTurn();
+                }
+                else
+                {
+					state = BattleState.ENEMYTURN;
+					StartCoroutine(EnemyTurn());
+				}
             }
+			else if(state == BattleState.ENEMYTURN)
+            {
+				if (playerUnit.speed < enemyUnit.speed)
+				{
+					StartCoroutine(PlayerAttack());
+				}
+				else
+				{
+					state = BattleState.PLAYERTURN;
+					PlayerTurn();
+				}
+			}
+			else if (state == BattleState.WON)
+			{
+				SceneManager.LoadScene("Hunters Dev Room");
+			}
+			else if (state == BattleState.LOST)
+			{
+				SceneManager.LoadScene("Hunters Dev Room");
+			}
+
 		}
 	}
     IEnumerator SetupBattle()
@@ -88,30 +117,13 @@ public class BattleSystem : MonoBehaviour
 
 		yield return new WaitForSeconds(2f);
 
+		charge.SetActive(false);
+		tornadoPunch.SetActive(false);
+
 		if (isDead)
 		{
 			state = BattleState.WON;
 			EndBattle();
-		}
-		else if (playerUnit.speed < enemyUnit.speed)
-		{
-			charge.SetActive(false);
-			tornadoPunch.SetActive(false);
-			PlayerTurn();
-		}
-		else
-		{
-			charge.SetActive(false);
-			tornadoPunch.SetActive(false);
-			
-			if(continueBattle)
-            {
-				Debug.Log("here");
-				state = BattleState.ENEMYTURN;
-				StartCoroutine(EnemyTurn());
-			}
-            
-			
 		}
 	}
 
@@ -132,17 +144,8 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.LOST;
 			EndBattle();
 		}
-		else if(playerUnit.speed < enemyUnit.speed)
-        {
-			lunapillarAttack.SetActive(false);
-			StartCoroutine(PlayerAttack());
-		}
-		else
-		{
-			lunapillarAttack.SetActive(false);
-			state = BattleState.PLAYERTURN;
-			PlayerTurn();
-		}
+
+		lunapillarAttack.SetActive(false);
 	}
 
 	void EndBattle()
@@ -150,12 +153,10 @@ public class BattleSystem : MonoBehaviour
 		if (state == BattleState.WON)
 		{
 			dialogueText.text = "You won the battle!";
-			SceneManager.LoadScene("Hunters Dev Room");
 		}
 		else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "You were defeated.";
-			SceneManager.LoadScene("Hunters Dev Room");
 		}
 	}
 
