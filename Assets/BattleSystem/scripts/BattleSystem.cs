@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -33,7 +34,7 @@ public class BattleSystem : MonoBehaviour
 	public GameObject charge;
 	public GameObject lunapillarAttack;
 
-	private bool continueBattle = false;
+	private bool continueBattle;
 
 	private void Awake()
     {
@@ -44,11 +45,22 @@ public class BattleSystem : MonoBehaviour
 
     void Start()
 	{
+		continueBattle = false;
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
 	}
 
-	IEnumerator SetupBattle()
+    private void Update()
+    {
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			if(state == BattleState.START)
+            {
+
+            }
+		}
+	}
+    IEnumerator SetupBattle()
 	{
 		GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
 		playerUnit = playerGO.GetComponent<Unit>();
@@ -69,7 +81,6 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerAttack()
 	{
-		
 		bool isDead = enemyUnit.TakeDamage(playerUnit);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
@@ -92,8 +103,15 @@ public class BattleSystem : MonoBehaviour
 		{
 			charge.SetActive(false);
 			tornadoPunch.SetActive(false);
-			state = BattleState.ENEMYTURN;
-			StartCoroutine(EnemyTurn());
+			
+			if(continueBattle)
+            {
+				Debug.Log("here");
+				state = BattleState.ENEMYTURN;
+				StartCoroutine(EnemyTurn());
+			}
+            
+			
 		}
 	}
 
@@ -186,11 +204,6 @@ public class BattleSystem : MonoBehaviour
 		attackMenu.SetActive(false);
 		StartCoroutine(PlayerHeal());
 	}
-
-	public void OnContinueButton()
-    {
-		continueBattle = true;
-    }
 
 	private void AttackOneClicked()
     {
