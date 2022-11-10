@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +8,6 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
-
 	public GameObject playerPrefab;
 	public GameObject enemyPrefab;
 
@@ -18,35 +17,81 @@ public class BattleSystem : MonoBehaviour
 	Unit playerUnit;
 	Unit enemyUnit;
 
-	public Text dialogueText;
+	public Text dialogueText;//text in the top of the screen
 
 	public BattleHUD1 playerHUD;
 	public BattleHUD1 enemyHUD;
 
 	public BattleState state;
 
-	public GameObject attackMenu;
+	public GameObject attackMenu;//menu that stores the attack buttons
+
+	//attack buttons for the player
 	public Button attackOne;
 	public Button attackTwo;
-	private bool attackOneClicked;
-	private bool attackTwoClicked;
 
-	// Start is called before the first frame update
+	//sprites used to represent attacks
+	public GameObject tornadoPunch;
+	public GameObject charge;
+	public GameObject lunapillarAttack;
+
+	private bool playerPlayed;//boolean used to avoid enemy killing player if the spam E
 
 	private void Awake()
     {
+		//listeners for when the players attack buttons are clicked
 		attackOne.onClick.AddListener(AttackOneClicked);
-
 		attackTwo.onClick.AddListener(AttackTwoClicked);
 	}
 
     void Start()
 	{
+		playerPlayed = false;
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
 	}
 
-	IEnumerator SetupBattle()
+    private void Update()
+    {
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			if(state == BattleState.PLAYERTURN)
+            {
+				if(playerUnit.speed < enemyUnit.speed)
+                {
+					PlayerTurn();
+                }
+                else if(playerPlayed)
+                {
+					playerPlayed = false;
+					state = BattleState.ENEMYTURN;
+					StartCoroutine(EnemyTurn());
+				}
+            }
+			else if(state == BattleState.ENEMYTURN)
+            {
+				if (playerUnit.speed < enemyUnit.speed)
+				{
+					StartCoroutine(PlayerAttack());
+				}
+				else
+				{
+					state = BattleState.PLAYERTURN;
+					PlayerTurn();
+				}
+			}
+			else if (state == BattleState.WON)
+			{
+				SceneManager.LoadScene("Hunters Dev Room");
+			}
+			else if (state == BattleState.LOST)
+			{
+				SceneManager.LoadScene("Hunters Dev Room");
+			}
+
+		}
+	}
+    IEnumerator SetupBattle()
 	{
 		GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
 		playerUnit = playerGO.GetComponent<Unit>();
@@ -67,7 +112,6 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerAttack()
 	{
-		
 		bool isDead = enemyUnit.TakeDamage(playerUnit);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
@@ -75,30 +119,26 @@ public class BattleSystem : MonoBehaviour
 
 		yield return new WaitForSeconds(2f);
 
+		charge.SetActive(false);
+		tornadoPunch.SetActive(false);
+
+		playerPlayed = true;
+
 		if (isDead)
 		{
 			state = BattleState.WON;
 			EndBattle();
-		}
-		else if(playerUnit.speed < enemyUnit.speed)
-        {
-			PlayerTurn();
-		}
-		else
-		{
-			state = BattleState.ENEMYTURN;
-			StartCoroutine(EnemyTurn());
 		}
 	}
 
 	IEnumerator EnemyTurn()
 	{
 		dialogueText.text = enemyUnit.unitName + " attacks!";
+		lunapillarAttack.SetActive(true);
 
 		yield return new WaitForSeconds(1f);
 
 		bool isDead = playerUnit.TakeDamage(enemyUnit);
-
 		playerHUD.SetHP(playerUnit.currentHP);
 
 		yield return new WaitForSeconds(1f);
@@ -108,16 +148,8 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.LOST;
 			EndBattle();
 		}
-		else if(playerUnit.speed < enemyUnit.speed)
-        {
-			StartCoroutine(PlayerAttack());
-		}
-		else
-		{
-			state = BattleState.PLAYERTURN;
-			PlayerTurn();
-		}
 
+		lunapillarAttack.SetActive(false);
 	}
 
 	void EndBattle()
@@ -125,12 +157,10 @@ public class BattleSystem : MonoBehaviour
 		if (state == BattleState.WON)
 		{
 			dialogueText.text = "You won the battle!";
-			SceneManager.LoadScene("Hunters Dev Room");
 		}
 		else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "You were defeated.";
-			SceneManager.LoadScene("Hunters Dev Room");
 		}
 	}
 
@@ -151,6 +181,7 @@ public class BattleSystem : MonoBehaviour
 
 		state = BattleState.ENEMYTURN;
 		StartCoroutine(EnemyTurn());
+		
 	}
 
 	public void OnAttackButton()
@@ -182,12 +213,14 @@ public class BattleSystem : MonoBehaviour
 	private void AttackOneClicked()
     {
 		playerUnit.currentMove = attackOne.GetComponentInChildren<Text>().text;
+		charge.SetActive(true);
 		Debug.Log(playerUnit.currentMove);
 	}
 
 	private void AttackTwoClicked()
     {
 		playerUnit.currentMove = attackTwo.GetComponentInChildren<Text>().text;
+		tornadoPunch.SetActive(true);
 		Debug.Log(playerUnit.currentMove);
 	}
 }
