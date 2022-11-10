@@ -8,7 +8,6 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
-
 	public GameObject playerPrefab;
 	public GameObject enemyPrefab;
 
@@ -18,14 +17,16 @@ public class BattleSystem : MonoBehaviour
 	Unit playerUnit;
 	Unit enemyUnit;
 
-	public Text dialogueText;
+	public Text dialogueText;//text in the top of the screen
 
 	public BattleHUD1 playerHUD;
 	public BattleHUD1 enemyHUD;
 
 	public BattleState state;
 
-	public GameObject attackMenu;
+	public GameObject attackMenu;//menu that stores the attack buttons
+
+	//attack buttons for the player
 	public Button attackOne;
 	public Button attackTwo;
 
@@ -34,7 +35,7 @@ public class BattleSystem : MonoBehaviour
 	public GameObject charge;
 	public GameObject lunapillarAttack;
 
-	private bool continueBattle;
+	private bool playerPlayed;//boolean used to avoid enemy killing player if the spam E
 
 	private void Awake()
     {
@@ -45,7 +46,7 @@ public class BattleSystem : MonoBehaviour
 
     void Start()
 	{
-		continueBattle = false;
+		playerPlayed = false;
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
 	}
@@ -60,8 +61,9 @@ public class BattleSystem : MonoBehaviour
                 {
 					PlayerTurn();
                 }
-                else
+                else if(playerPlayed)
                 {
+					playerPlayed = false;
 					state = BattleState.ENEMYTURN;
 					StartCoroutine(EnemyTurn());
 				}
@@ -119,6 +121,8 @@ public class BattleSystem : MonoBehaviour
 
 		charge.SetActive(false);
 		tornadoPunch.SetActive(false);
+
+		playerPlayed = true;
 
 		if (isDead)
 		{
