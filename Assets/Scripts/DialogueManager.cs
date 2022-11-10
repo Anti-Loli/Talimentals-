@@ -53,11 +53,12 @@ public class DialogueManager : MonoBehaviour
             {
                 StartConversation();
             }
-            else if (Input.GetKeyDown(KeyCode.E)&& isTalking == true)
+            else if (Input.GetKeyDown(KeyCode.E)&& isTalking == true)//ends dialogue with NPC
             {
                 EndDialogue();
             }
 
+            //loop that checks how many dialogue options there are and makes sure proper response if given for the right option
             for(int i = 0; i < npc.dialogue.Length; i++)
             {
                 if (curResponseTracker == i && npc.playerDialogue.Length >= i)
@@ -71,7 +72,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if(inRange == false)
+        if(inRange == false)//ends dialogue if player leaves NPC range
         {
             EndDialogue();
         }

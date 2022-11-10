@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleScene.unity
     guid: 120d8068279e0ab41bd5ad4ab86c2f19
   - enabled: 1
-    path: Assets/Scenes/Hunters Dev Room.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/InsideSchool.unity
+    guid: 6830587d7471bf947ac3f3e7ac4367c1
   m_configObjects: {}

@@ -328,6 +328,7 @@
 "Assets/Player/PlayerController.cs"
 "Assets/Scripts/BattleNPC.cs"
 "Assets/Scripts/DialogueManager.cs"
+"Assets/Scripts/Door.cs"
 "Assets/SlotsUI.cs"
 "Assets/Talimentals/Talimental.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
