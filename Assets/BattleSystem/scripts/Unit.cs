@@ -16,14 +16,31 @@ public class Unit : MonoBehaviour
 	public string element;
 	public string[] moves;
 	public string[] moveElements;
+	public string currentMove;
 
-	public int damage;
 
 	//calc damage
 
-	public bool TakeDamage(int dmg)
+	public bool TakeDamage(Unit enemy)
 	{
-		currentHP -= dmg;
+		int dmg = (((((2 * enemy.unitLevel) /5) + 2 * enemy.attack /defence)/ 50) + 2);
+
+		if (enemy.currentMove.Equals(enemy.moves[0]))
+		{
+			if (enemy.moveElements[0] == "Light" && element == "Dark")
+			{
+				dmg = dmg * 2;
+			}
+		}
+		else if (enemy.currentMove.Equals(enemy.moves[1]))
+		{
+			if (enemy.moveElements[1] == "Light" && element == "Dark")
+			{
+				dmg = dmg * 2;
+			}
+		}
+
+				currentHP -= dmg;
 
 		if (currentHP <= 0)
 			return true;
