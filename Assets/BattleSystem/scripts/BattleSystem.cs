@@ -8,12 +8,15 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {
+	//prefabs used for the player and enemy
 	public GameObject playerPrefab;
 	public GameObject enemyPrefab;
 
+	//transforms to spawn the player and enemy in the scene
 	public Transform playerBattleStation;
 	public Transform enemyBattleStation;
 
+	//unit objects used for the player and enemy information
 	Unit playerUnit;
 	Unit enemyUnit;
 
